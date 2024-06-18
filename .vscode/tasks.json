@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "command": "gfortran",
+    "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${workspaceRoot}\\${fileBasenameNoExtension}.exe"
+    ],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new", //这里shared表示共享，改成new之后每个进程创建新的端口
+        "showReuseMessage": true,
+        "clear": false
+    }
+}
